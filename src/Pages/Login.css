@@ -1,0 +1,75 @@
+.login-card {
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    backdrop-filter: blur(15px); /* Increase blur effect */
+    border-radius: 16px;
+    padding: 40px;
+    width: 320px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Slight shadow for the glass effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Optional: Add a faint border */
+    font-family: 'Cormorant Garamond', cursive;
+}
+
+.login-title {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Slight transparent input field */
+    color: var(--text-color);
+    font-size: 16px;
+    outline: none;
+    font-family: 'Comic Neue', cursive;
+}
+
+.login-button, .register-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    transition: background-color 0.3s ease;
+    font-family: "'Be Vietnam Pro', sans-serif"
+}
+
+.register-button {
+    background-color: transparent;
+    border: 2px solid var(--button-text);
+}
+
+/* Login background wrapper */
+.login-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Light mode background */
+body:not(.dark-mode) .login-background {
+    background-color: #B8E0D2;
+}
+
+/* Dark mode background */
+body.dark-mode .login-background {
+    background-color: #0F1A20;
+    
+
+}

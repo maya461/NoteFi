@@ -1,0 +1,90 @@
+/* GLOBAL LAYOUT */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* LIGHT / DARK MODE BODY CLASS */
+body.dark-mode {
+  --bg-color: #0C090D;
+  --text-color: #ffffff;
+  --card-bg: #2c2c2c;
+  --card-text: #ffffff;
+  --header-bg: #1f1f1f;
+}
+body:not(.dark-mode) {
+  --bg-color: #fafafa;
+  --text-color: #000000;
+  --card-bg: #fff8dc;
+  --card-text: #000000;
+  --header-bg: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* HEADER */
+header {
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* EXPANDING INPUT CONTAINER */
+.create-note {
+  position: relative;
+  padding: 16px;         /* Adds space inside the Paper */
+  margin: 16px auto;      /* Optional: adds space around the Paper */
+  width: 100%;
+  max-width: 600px;       /* Optional: limits width */
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+
+/* GRID OF NOTES */
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* NOTE CARD */
+.note-card {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 16px;
+  width: 240px;
+  word-break: break-word;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.note-card h3 {
+  margin-top: 0;
+}
+
+/* ICON BUTTONS IN NOTE CARD */
+.note-card .MuiIconButton-root {
+  color: inherit;           /* inherit text color (white in dark mode) */
+  background: transparent; 
+}
+.note-card .MuiIconButton-root:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+
