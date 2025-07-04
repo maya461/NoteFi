@@ -44,7 +44,8 @@
 # check localhost 5173
 
 
-[![NoteFi Demo](https://youtu.be/pfBP9T9l5c0)
+[![NoteFi Demo](https://img.youtube.com/vi/U9PzL7B2VXs/0.jpg)](https://youtu.be/pfBP9T9l5c0)
+
 
 
 --images
